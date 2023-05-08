@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --soft-red: #($soft-red);
+  --soft-orange: #($soft-orange);
+  --off-white: #($off-white);
+  --grayish-blue: #($grayish-blue);
+  --dark-grayish-blue: #($dark-grayish-blue);
+  --very-dark-blue: #($very-dark-blue);
+}
+
+body {
+  width: 100vh;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9375rem;
+  color: var(--grayish-blue);
+}/*# sourceMappingURL=style.css.map */
