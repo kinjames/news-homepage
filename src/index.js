@@ -1,19 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import logo from "./images/logo.svg";
 
 import "./assets/scss/style.css";
+import Navbar from "./Navbar";
+import Mobile from "./Mobile";
 
 const Container = () => {
   return (
     <main className="container">
-      <Hello />
+      <Navbar />
+      <Mobile />
     </main>
   );
-};
-
-const Hello = () => {
-  return <img src={logo} alt="logo" />;
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
