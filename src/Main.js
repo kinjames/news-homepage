@@ -12,11 +12,25 @@ const Main = () => {
 const Hero = () => {
   return (
     <div className="hero-section">
-      <Images />
-      <Images />
+      <HeroContainer />
     </div>
   );
 };
+
+const HeroContainer = () => {
+  return (
+    <div className="hero-container">
+      <Images />;
+      <Headings />;
+    </div>
+  );
+};
+
+// const Aside = () => {
+//     return (
+
+//     )
+// }
 
 const Images = () => {
   return (
