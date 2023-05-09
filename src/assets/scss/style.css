@@ -101,6 +101,10 @@ body {
     display: none;
   }
 }
+.container .menu {
+  z-index: 120;
+  cursor: pointer;
+}
 .container .mobile-menu {
   width: 70%;
   height: 100vh;
@@ -109,12 +113,17 @@ body {
   justify-content: center;
   gap: 2rem;
   z-index: 100;
-  color: white;
-  background-color: black;
+  padding: 2rem;
+  background-color: red;
   display: flex;
   position: absolute;
   right: 0;
   top: 0;
+}
+.container .mobile-menu a {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+  font-size: 1.25rem;
 }
 @media (min-width: 40em) {
   .container .mobile-menu {
