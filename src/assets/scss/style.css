@@ -22,8 +22,57 @@ img {
 
 h1 {
   font-weight: 800;
-  color: var(--very-dark-blue);
-  width: 60px;
+  color: #00001a;
+  line-height: 2.5rem;
+  width: 30%;
+  font-size: 2.5rem;
+}
+@media (max-width: 39.9375em) {
+  h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.para-link {
+  width: 55%;
+}
+@media (max-width: 39.9375em) {
+  .para-link {
+    width: 100%;
+  }
+}
+
+.para {
+  margin-bottom: 1.25rem;
+}
+
+.link {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #f15e50;
+  color: #fffdfa;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.link:hover {
+  background-color: #00001a;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background: #5d5f79;
+  margin-bottom: 1.5rem;
 }
 
 body {
@@ -31,9 +80,14 @@ body {
   height: 100vh;
   font-family: "Inter", sans-serif;
   font-size: 0.9375rem;
-  color: var(--grayish-blue);
+  color: #5d5f79;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 39.9375em) {
+  body {
+    height: 100%;
+  }
 }
 
 @media (max-width: 39.9375em) {
@@ -61,7 +115,6 @@ body {
 }
 
 .container {
-  border: 2px solid red;
   width: 1140px;
   height: 100%;
   padding: 1.25rem;
@@ -78,13 +131,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 3.25rem;
-  border-bottom: 1px solid green;
   margin-bottom: 2rem;
-}
-@media (max-width: 39.9375em) {
-  .container .nav-bar {
-    margin-bottom: 1.5rem;
-  }
 }
 .container .logo {
   width: 70px;
@@ -141,10 +188,67 @@ body {
     display: none;
   }
 }
-.container .hero-images .desktop-hero-image {
-  border: 2px solid green;
+.container .hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 39.9375em) {
+  .container .hero-section {
+    flex-direction: column;
+  }
+}
+.container .hero-container {
   width: 65%;
-  height: 350px;
+}
+@media (max-width: 39.9375em) {
+  .container .hero-container {
+    width: 100%;
+  }
+}
+.container .news-aside {
+  width: 32%;
+  background-color: #00001a;
+  padding: 1.5rem 1rem;
+}
+@media (max-width: 39.9375em) {
+  .container .news-aside {
+    width: 100%;
+  }
+}
+.container .news-aside h2 {
+  color: #e9ab53;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.container .news-highlight {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.container .news-highlight h4 {
+  color: #fffdfa;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.container .news-highlight h4:hover {
+  color: #e9ab53;
+}
+.container .hero-texts {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 39.9375em) {
+  .container .hero-texts {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+  }
+}
+.container .hero-images .desktop-hero-image {
+  width: 100%;
+  height: 320px;
+  margin-bottom: 1.25rem;
 }
 .container .hero-images .desktop-hero-image img {
   height: 100%;
@@ -155,8 +259,57 @@ body {
     display: none;
   }
 }
+.container .hero-images .mobile-hero-image {
+  margin-bottom: 1.5rem;
+}
 @media (min-width: 40em) {
   .container .hero-images .mobile-hero-image {
     display: none;
   }
+}
+.container .feature-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 39.9375em) {
+  .container .feature-section {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: unset;
+  }
+}
+.container .card-details {
+  display: flex;
+  gap: 0.6rem;
+  height: 130px;
+  cursor: pointer;
+}
+.container .card-details .image {
+  width: 45%;
+  height: 100%;
+}
+.container .card-details .image img {
+  border: 2px solid red;
+  width: 100%;
+  height: 100%;
+}
+.container .card-details .texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .card-details .texts h3 {
+  font-size: 2.5rem;
+}
+.container .card-details .texts h5 {
+  font-size: 1rem;
+  color: #00001a;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.container .card-details .texts h5:hover {
+  color: #f15e50;
+}
+.container .card-details .texts p {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
