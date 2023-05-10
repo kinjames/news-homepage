@@ -284,6 +284,15 @@ body {
   height: 130px;
   cursor: pointer;
 }
+.container .card-details .image {
+  width: 120px;
+  height: 100%;
+  border: 2px solid red;
+}
+.container .card-details .image img {
+  width: 100%;
+  height: 100%;
+}
 .container .card-details .texts {
   display: flex;
   flex-direction: column;
