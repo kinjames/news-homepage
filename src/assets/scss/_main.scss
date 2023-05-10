@@ -163,28 +163,35 @@
   }
 
   .feature-section {
-    display: flex;
-    justify-content: space-between;
     // display: grid;
     // grid-template-columns: repeat(3, 1fr);
     // gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 1fr;
+    gap: 1.25rem;
 
     @include breakpoint-down(small) {
+      // grid-template-columns: unset;
+      // grid-template-rows: repeat((3, 1fr));
       flex-direction: column;
-      gap: 1.5rem;
     }
   }
 
   .card-details {
     display: flex;
+    border: 2px solid red;
     gap: 0.6rem;
     height: 130px;
     cursor: pointer;
 
+    @include breakpoint-down(small) {
+      width: 100%;
+    }
+
     .image {
       width: 120px;
-      height: 130px;
-      border: 2px solid red;
+      height: auto;
 
       img {
         width: 100%;
@@ -197,7 +204,8 @@
 
       @include breakpoint-down(small) {
         width: 120px;
-        height: 130px;
+        height: 100%;
+        object-fit: cover;
       }
     }
 

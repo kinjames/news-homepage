@@ -18,6 +18,8 @@
 
 img {
   max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 h1 {
@@ -270,23 +272,29 @@ body {
 .container .feature-section {
   display: flex;
   justify-content: space-between;
+  width: 1fr;
+  gap: 1.25rem;
 }
 @media (max-width: 39.9375em) {
   .container .feature-section {
     flex-direction: column;
-    gap: 1.5rem;
   }
 }
 .container .card-details {
   display: flex;
+  border: 2px solid red;
   gap: 0.6rem;
   height: 130px;
   cursor: pointer;
 }
+@media (max-width: 39.9375em) {
+  .container .card-details {
+    width: 100%;
+  }
+}
 .container .card-details .image {
   width: 120px;
-  height: 130px;
-  border: 2px solid red;
+  height: auto;
 }
 .container .card-details .image img {
   width: 100%;
@@ -300,7 +308,9 @@ body {
 @media (max-width: 39.9375em) {
   .container .card-details .image {
     width: 120px;
-    height: 130px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .container .card-details .texts {
