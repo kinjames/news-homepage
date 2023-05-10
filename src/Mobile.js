@@ -1,11 +1,11 @@
 const Mobile = () => {
   return (
     <div className="mobile-menu hide">
-      <a href="#">Home</a>
-      <a href="#">New</a>
-      <a href="#">Popular</a>
-      <a href="#">Trending</a>
-      <a href="#">Category</a>
+      <a href="https://google.com">Home</a>
+      <a href="https://google.com">New</a>
+      <a href="https://google.com">Popular</a>
+      <a href="https://google.com">Trending</a>
+      <a href="https://google.com">Category</a>
     </div>
   );
 };
