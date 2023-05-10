@@ -1,8 +1,8 @@
 import desktop from "./images/image-web-3-desktop.jpg";
 import mobile from "./images/image-web-3-mobile.jpg";
-// import retro from "./images/image-retro-pcs.jpg";
-// import gaming from "./images/image-gaming-growth.jpg";
-// import laptop from "./images/image-top-laptops.jpg";
+import retro from "./images/image-retro-pcs.jpg";
+import gaming from "./images/image-gaming-growth.jpg";
+import laptop from "./images/image-top-laptops.jpg";
 
 const Main = () => {
   return (
@@ -61,19 +61,19 @@ const Features = () => {
   return (
     <div className="feature-section">
       <Card
-        // image={retro}
+        image={retro}
         number={"01"}
         heading={" Reviving Retro PCs"}
         text={"What happens when old PCs are given modern upgrades?"}
       />
       <Card
-        // image={laptop}
+        image={laptop}
         number={"02"}
         heading={" Top 10 Laptops of 2022"}
         text={"Our best picks for various needs and budgets."}
       />
       <Card
-        // image={gaming}
+        image={gaming}
         number={"03"}
         heading={" The Growth of Gaming"}
         text={"How the pandemic has sparked fresh opportunities."}
@@ -83,10 +83,12 @@ const Features = () => {
 };
 
 const Card = (props) => {
-  const { number, heading, text } = props;
+  const { image, number, heading, text } = props;
   return (
     <div className="card-details">
-      <div className="image">{/* <img src={image} alt="name" /> */}</div>
+      <div className="image">
+        <img src={image} alt="name" />
+      </div>
       <div className="texts">
         <h3>{number}</h3>
         <h5>{heading}</h5>
