@@ -274,6 +274,7 @@ body {
   justify-content: space-between;
   width: 1fr;
   gap: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 39.9375em) {
   .container .feature-section {
