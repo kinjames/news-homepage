@@ -163,9 +163,6 @@
   }
 
   .feature-section {
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // gap: 1rem;
     display: flex;
     justify-content: space-between;
     width: 1fr;
@@ -173,9 +170,8 @@
     margin-bottom: 1.5rem;
 
     @include breakpoint-down(small) {
-      // grid-template-columns: unset;
-      // grid-template-rows: repeat((3, 1fr));
       flex-direction: column;
+      width: 100%;
     }
   }
 
@@ -198,12 +194,13 @@
         height: 100%;
 
         @include breakpoint-down(small) {
-          width: 100%;
+          width: 120px;
         }
       }
 
       @include breakpoint-down(small) {
         width: 120px;
+        border: 2px solid red;
         height: 100%;
         object-fit: cover;
       }
