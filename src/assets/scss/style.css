@@ -282,7 +282,6 @@ body {
 }
 .container .card-details {
   display: flex;
-  border: 2px solid red;
   gap: 0.6rem;
   height: 130px;
   cursor: pointer;
