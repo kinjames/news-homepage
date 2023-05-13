@@ -309,7 +309,6 @@ body {
 @media (max-width: 39.9375em) {
   .container .card-details .image {
     width: 120px;
-    border: 2px solid red;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;

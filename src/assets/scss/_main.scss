@@ -200,7 +200,6 @@
 
       @include breakpoint-down(small) {
         width: 120px;
-        border: 2px solid red;
         height: 100%;
         object-fit: cover;
       }
