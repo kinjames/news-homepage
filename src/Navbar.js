@@ -20,14 +20,6 @@ const Logo = () => {
   );
 };
 
-// const CloseMenu = () => {
-//   return (
-//     <div className="close-menu">
-//       <img src={close} alt="Close-Btn" />
-//     </div>
-//   );
-// };
-
 const Menu = () => {
   const handleClick = (e) => {
     const style = e.target;
