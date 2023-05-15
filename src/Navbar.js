@@ -33,12 +33,10 @@ const Menu = () => {
     const style = e.target;
     if (style.classList.contains("open")) {
       style.src = close;
-      style.classList.add = "close";
-      style.classList.remove = "open";
+      style.classList.remove("open");
     } else {
       style.src = menu;
       style.classList.add("open");
-      style.classList.remove("close");
     }
     console.log(style);
   };
