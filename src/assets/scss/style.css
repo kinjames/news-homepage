@@ -126,6 +126,10 @@ body {
   background: linear-gradient(hsl(233, 26%, 24%), transparent);
 }
 
+.close {
+  border: 2px solid red;
+}
+
 .container {
   width: 1140px;
   height: 100%;

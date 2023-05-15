@@ -1,6 +1,6 @@
 const Mobile = () => {
   return (
-    <div className="mobile-menu hide">
+    <div className="mobile-menu">
       <a href="https://google.com">Home</a>
       <a href="https://google.com">New</a>
       <a href="https://google.com">Popular</a>

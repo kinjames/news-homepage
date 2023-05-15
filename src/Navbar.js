@@ -1,5 +1,6 @@
 import logo from "./images/logo.svg";
 import menu from "./images/icon-menu.svg";
+import close from "./images/icon-menu-close.svg";
 
 const Navbar = () => {
   return (
@@ -28,9 +29,27 @@ const Logo = () => {
 // };
 
 const Menu = () => {
+  const handleClick = (e) => {
+    const style = e.target;
+    if (style.classList.contains("open")) {
+      style.src = close;
+      style.classList.add = "close";
+      style.classList.remove = "open";
+    } else {
+      style.src = menu;
+      style.classList.add("open");
+      style.classList.remove("close");
+    }
+    console.log(style);
+  };
   return (
     <div className="menu hide-from-desktop">
-      <img src={menu} alt="Menu-Btn" className="menu-img" />
+      <img
+        src={menu}
+        alt="Menu-Btn"
+        className="menu-img open"
+        onClick={(e) => handleClick(e)}
+      />
     </div>
   );
 };
